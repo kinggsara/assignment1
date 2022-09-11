@@ -1,47 +1,105 @@
-body {
-    margin: 0 auto;
-    max-width: 500px;
-    width: 50%;
-    height: 30%;
-    background:  linear-gradient(to right, purple , yellow);
+* {
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-#box1 {
-    float: left;
-    margin: 5px;
-    width: 80px;
-    height: 80px;
-    padding: 5px;
-    background-color: rgb(128, 101, 154);
-    border-radius: 10px;
+body{
+    background-color:cadetblue;
 }
 
-#box2 {
-    float: right;
-    margin: 5px;
-    width: 80px;
-    height: 80px;
-    padding: 5px;
-    background-color: rgb(128, 101, 154);
-    border-radius: 10px;
+h1{
+    text-align: center;
+    font-size: larger;
+    font-style: italic;
+}
+
+
+
+.box1,.box2,.box3{
+    height: 200px;
+    width:423px;
+    display: inline-block;
+    box-shadow: 2px 5px 4px rgb(65, 49, 5);
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+.box1{
     
-}
-#box3 {
-    float: left;
-    margin: 5px;
-    width: 80px;
-    height: 80px;
-    padding: 5px;
-    background-color: rgb(128, 101, 154);
-    border-radius: 10px;
-}
-
-
-.special {
-    background-color: rebeccapurple;
+    background-color: lightpink;
     padding: 15px;
-    color: black;
-    height: 80px;
-    border-radius: 20px;
+    color: white;
+    margin: 30px;
+    padding-top: 0px;
+    padding-right: 0px;
+    border-right-width: 0px;
+
+}
+
+.box2{
+    
+    background-color: lightgreen;
+    padding: 15px;
+    color: white;
+    margin: 30px;
+    padding-top: 0px;
+    padding-right: 0px;
+}
+.box3{
+
+    background-color: lightsalmon;
+    padding: 15px;
+    color: white;
+    margin: 30px;
+    padding-top: 0px;
+    padding-right: 0px;
+}
+
+.justify{
+    text-align: left;
+    clear: right;
+}
+.coffee{
+    text-align: right;
+    margin: 15px;
     
 }
+
+.nested-box{
+    border: 1px solid black;
+    height: 50px;
+    background: grey;
+    float: right;
+}
+
+/*for desktop*/
+
+@media (min-width:992px)
+{
+#box1,#box2,#box3{
+    width: 423px;
+    height: 200px;
+}
+}
+
+@media (max-width:767px) {
+
+#box1,#box2,#box3{
+    width:423px;
+    height:200px;
+}
+}
+
+/*@media (min-width:767px) and (max-width:991px) {
+
+#box1,#box2{
+    height: 100px;
+    width: 100px;
+}
+
+#box3{
+    width: 50%;
+}
+}*.
+
+
